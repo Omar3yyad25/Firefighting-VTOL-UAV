@@ -1,0 +1,1 @@
+/home/omar/catkin_ws/devel/.private/mavlink_sitl_gazebo/lib/pkgconfig/mavlink_sitl_gazebo.pc

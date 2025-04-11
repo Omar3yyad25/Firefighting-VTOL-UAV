@@ -1,0 +1,1 @@
+/home/omar/catkin_ws/devel/.private/vtol-fire/lib/vtol-fire/state_monitor.py

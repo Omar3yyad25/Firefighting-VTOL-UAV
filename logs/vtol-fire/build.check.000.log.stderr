@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/omar/catkin_ws/src/vtol-fire/CMakeLists.txt:208 (catkin_install_python3):
+  Unknown CMake command "catkin_install_python3".
+
+
+make: *** [Makefile:740: cmake_check_build_system] Error 1

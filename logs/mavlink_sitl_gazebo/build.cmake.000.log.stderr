@@ -1,0 +1,8 @@
+[31m[1mCMake Error[0m at /home/omar/catkin_ws/src/mavlink_sitl_gazebo/CMakeLists.txt:103 (add_subdirectory):
+  The source directory
+
+    /home/omar/catkin_ws/src/mavlink_sitl_gazebo/external/OpticalFlow
+
+  does not contain a CMakeLists.txt file.
+
+
