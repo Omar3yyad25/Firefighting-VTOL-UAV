@@ -1,0 +1,23 @@
+<launch>    
+<include file="$(find px4)/launch/mavros_posix_sitl.launch">
+</include>    
+    <node pkg="vtolfire" type="state_monitor.py" name="state_monitoring" output="screen"/>
+    <node pkg="vtolfire" type="offboard_control.py" name="offboard_control" output="screen"/>
+    <node pkg="vtolfire" type="rtl_node.py" name="rtl" output="screen"/>
+ 
+    <!-- Fire detection node -->
+    <node name="fire_detection" pkg="vtolfire" type="fire_detection_node.py" output="screen">
+        <param name="target_position"  value="[2.0, 2.0, 2.0]" />
+        <param name="pos_tol"          value="0.2" />
+        <param name="image_path"       value="input/fire.jpeg" />
+        <param name="output_folder"    value="output" />
+    </node>
+ 
+    <!-- Ball deploy node -->
+    <node name="ball_deploy" pkg="vtolfire" type="ball_deploy_node.py" output="screen">
+        <param name="servo_id"   value="9" />
+        <param name="open_pwm"   value="1900" />
+        <param name="pos_tol"    value="0.3" />
+    </node>
+</launch>
+
